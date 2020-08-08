@@ -19,6 +19,8 @@ var prices = ["¥7800","¥23,000","¥36,000","¥4500","¥9650","¥6700","¥7500"
 var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxing","antiqua","Tommorowland","Felissimo","Aula","Bal","Fred Perry","Grandier","HUGO","Jackman","KBF","Lazar"]
  //カートにつなぐ変数
     var selectedImage : UIImage?
+    var selectedPrice : UILabel?
+    var selectedBrand : UILabel?
 
     @IBOutlet weak var CollecionView: UICollectionView!
     override func viewDidLoad() {
@@ -36,15 +38,6 @@ var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxin
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
               //①
               let cell = self.CollecionView.dequeueReusableCell(withReuseIdentifier: "Fashion", for: indexPath) as! CollectionViewCell
-//
-      /*      // Tag番号を使ってImageViewのインスタンス生成
-                  let ImageView = cell.contentView.viewWithTag(1) as! UIImageView
-                  // 画像配列の番号で指定された要素の名前の画像をUIImageとする
-                  let cellImage = UIImage(named: self.images[indexPath.row])
-                  // UIImageをUIImageViewのimageとして設定
-                  ImageView.image = cellImage
-*/
- //
               //②
               cell.imageView.image = UIImage(named: self.images[indexPath.row])
               //③
@@ -64,11 +57,14 @@ var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxin
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // [indexPath.row] から画像名を探し、UImage を設定
                  selectedImage = UIImage(named: images[indexPath.row])
+                selectedPrice?.text = self.prices[indexPath.row]
+                selectedBrand?.text = self.prices[indexPath.row]
                  if selectedImage != nil {
                      // SubViewController へ遷移するために Segue を呼び出す
                      performSegue(withIdentifier: "Cart",sender: nil)
-                   
                  }
+     
+                    
     }
         // Segue 準備
         override func prepare(for segue: UIStoryboardSegue, sender: Any!) {
@@ -77,6 +73,8 @@ var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxin
 
                 // SubViewController のselectedImgに選択された画像を設定する
                 subVC.selectedImg = selectedImage
+                subVC.selectedPrc?.text = selectedPrice?.text
+                subVC.selectedBrd?.text = selectedPrice?.text
             }
         }
     }

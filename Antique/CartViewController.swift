@@ -17,6 +17,8 @@ class CartViewController: UIViewController {
     //ブランド名の配列
     var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxing","antiqua","Tommorowland","Felissimo","Aula","Bal","Fred Perry","Grandier","HUGO","Jackman","KBF","Lazar"]
        var selectedImg: UIImage!
+    var selectedBrd: UILabel!
+    var selectedPrc: UILabel!
 
     @IBOutlet weak var ImageView: UIImageView!
     @IBOutlet weak var pricelabel: UILabel!
@@ -24,7 +26,8 @@ class CartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ImageView.image = selectedImg
-
+        pricelabel?.text = selectedBrd?.text
+        brandLabel?.text = selectedPrc?.text
     }
     
     @IBAction func buyButton(_ sender: Any) {
