@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="Home" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Antique" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,7 +73,6 @@
                                             <outlet property="brandLabel" destination="sVp-mx-BBU" id="Spy-R2-7y4"/>
                                             <outlet property="imageView" destination="7nc-hP-AC1" id="3pl-J5-gLS"/>
                                             <outlet property="priceLabel" destination="o0l-OD-8Ib" id="ftI-g8-N65"/>
-                                            <segue destination="bfA-Ec-OAd" kind="show" identifier="Cart" id="yXS-qH-VrF"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -88,9 +87,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="square.stack.3d.down.right" catalog="system" id="iLf-4T-fb5"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="square.split.2x2.fill" catalog="system" id="iLf-4T-fb5"/>
                     <connections>
                         <outlet property="CollecionView" destination="Z60-og-BIP" id="PDL-WK-1a0"/>
+                        <segue destination="bfA-Ec-OAd" kind="presentation" identifier="Cart" id="hu2-Zb-KfI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -181,7 +181,7 @@
             </objects>
             <point key="canvasLocation" x="-832" y="-269"/>
         </scene>
-        <!--Item-->
+        <!--Account-->
         <scene sceneID="QK3-Md-wnO">
             <objects>
                 <viewController storyboardIdentifier="account" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CYF-hy-bD5" customClass="accountViewController" customModule="Antique" customModuleProvider="target" sceneMemberID="viewController">
@@ -235,7 +235,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5B0-If-L4u"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="person.fill" catalog="system" id="Hhb-Ub-PuA"/>
+                    <tabBarItem key="tabBarItem" title="Account" image="person.fill" catalog="system" id="Hhb-Ub-PuA"/>
                     <connections>
                         <outlet property="nameTextField" destination="2Lr-jP-CP5" id="Yyl-vd-WoD"/>
                     </connections>
@@ -244,7 +244,7 @@
             </objects>
             <point key="canvasLocation" x="115" y="-631"/>
         </scene>
-        <!--Item-->
+        <!--Message-->
         <scene sceneID="Xfb-0n-DzC">
             <objects>
                 <viewController storyboardIdentifier="Massage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fsY-z9-FpQ" customClass="MassageViewController" customModule="Antique" customModuleProvider="target" sceneMemberID="viewController">
@@ -288,7 +288,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="icS-YG-GC4"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="message.fill" catalog="system" id="6Wi-cp-Fru"/>
+                    <tabBarItem key="tabBarItem" title="Message" image="message.fill" catalog="system" id="6Wi-cp-Fru"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yTq-HK-rlN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -396,6 +396,6 @@
     <resources>
         <image name="message.fill" catalog="system" width="128" height="113"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="square.stack.3d.down.right" catalog="system" width="124" height="128"/>
+        <image name="square.split.2x2.fill" catalog="system" width="128" height="114"/>
     </resources>
 </document>
