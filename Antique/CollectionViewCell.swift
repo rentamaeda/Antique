@@ -11,8 +11,8 @@ import UIKit
 class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
-    
     @IBOutlet weak var brandLabel: UILabel!
-    
-    
+   
+    @IBOutlet weak var ImageHeight: NSLayoutConstraint!
+    @IBOutlet weak var ImageWidth: NSLayoutConstraint!
 }
