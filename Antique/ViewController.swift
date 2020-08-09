@@ -19,8 +19,8 @@ var prices = ["¥7800","¥23,000","¥36,000","¥4500","¥9650","¥6700","¥7500"
 var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxing","antiqua","Tommorowland","Felissimo","Aula","Bal","Fred Perry","Grandier","HUGO","Jackman","KBF","Lazar"]
  //カートにつなぐ変数
     var selectedImage : UIImage?
-    var selectedPrice : UILabel?
-    var selectedBrand : UILabel?
+    var selectedPrice : String?
+    var selectedBrand : String?
 
     @IBOutlet weak var CollecionView: UICollectionView!
     override func viewDidLoad() {
@@ -57,8 +57,8 @@ var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxin
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         // [indexPath.row] から画像名を探し、UImage を設定
                  selectedImage = UIImage(named: images[indexPath.row])
-                selectedPrice?.text = self.prices[indexPath.row]
-                selectedBrand?.text = self.prices[indexPath.row]
+                selectedPrice = self.prices[indexPath.row]
+                selectedBrand = self.brands[indexPath.row]
                  if selectedImage != nil {
                      // SubViewController へ遷移するために Segue を呼び出す
                      performSegue(withIdentifier: "Cart",sender: nil)
@@ -73,8 +73,8 @@ var brands = ["Patagonia","A BATHING APE","nano・universe","green label relaxin
 
                 // SubViewController のselectedImgに選択された画像を設定する
                 subVC.selectedImg = selectedImage
-                subVC.selectedPrc?.text = selectedPrice?.text
-                subVC.selectedBrd?.text = selectedPrice?.text
+                subVC.selectedPrc = selectedPrice
+                subVC.selectedBrd = selectedBrand
             }
         }
     }

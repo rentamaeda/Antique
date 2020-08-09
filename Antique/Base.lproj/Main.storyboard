@@ -145,7 +145,7 @@
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Gb3-E1-NcC"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="表示名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I57-Iq-Zcx">
                                 <rect key="frame" x="57" y="232" width="300" height="34"/>
@@ -172,9 +172,9 @@
                         <viewLayoutGuide key="safeArea" id="PM4-2d-fO6"/>
                     </view>
                     <connections>
-                        <outlet property="mailTextField" destination="RTd-zh-1DG" id="1vx-v2-Abn"/>
+                        <outlet property="mailTextField" destination="2J0-ah-0db" id="U2M-cL-Ki3"/>
                         <outlet property="nameTextField" destination="I57-Iq-Zcx" id="dus-3A-cws"/>
-                        <outlet property="passTextField" destination="I57-Iq-Zcx" id="o7w-AU-dzu"/>
+                        <outlet property="passTextField" destination="RTd-zh-1DG" id="7Oa-L4-Km2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twm-xG-ywz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -365,7 +365,7 @@
                     <connections>
                         <outlet property="ImageView" destination="n2i-Lf-Ifk" id="w9l-MN-S7a"/>
                         <outlet property="brandLabel" destination="Jej-Ka-vOj" id="UZA-Wb-ibE"/>
-                        <outlet property="pricelabel" destination="Jej-Ka-vOj" id="h3w-xO-WNC"/>
+                        <outlet property="pricelabel" destination="VID-Kb-CTa" id="mSr-QZ-c72"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cu4-2g-nFB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
