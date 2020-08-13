@@ -18,10 +18,16 @@
 		CE172F0224D897E100535CEE /* accountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE172F0124D897E100535CEE /* accountViewController.swift */; };
 		CE172F0424D8980C00535CEE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE172F0324D8980C00535CEE /* LoginViewController.swift */; };
 		CE172F0824D8986900535CEE /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE172F0724D8986900535CEE /* TabBarController.swift */; };
-		CE39208824DD334800907473 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39208724DD334800907473 /* CartViewController.swift */; };
+		CE33EB8F24E44B7C008E9303 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33EB8E24E44B7C008E9303 /* Const.swift */; };
 		CE39208C24DD337C00907473 /* MassageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39208B24DD337C00907473 /* MassageViewController.swift */; };
 		CE39208E24DD3C7E00907473 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE39208D24DD3C7E00907473 /* MessageUI.framework */; };
 		CE3BE26124DDBA4400EE4A92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE3BE26024DDBA4400EE4A92 /* GoogleService-Info.plist */; };
+		CE8DAD7524E39051001C31AF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DAD7424E39051001C31AF /* ImageViewController.swift */; };
+		CE8DAD7824E3BE47001C31AF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DAD7624E3BE47001C31AF /* TableViewCell.swift */; };
+		CE8DAD7924E3BE47001C31AF /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8DAD7724E3BE47001C31AF /* TableViewCell.xib */; };
+		CE8DAD7B24E3C48A001C31AF /* TitleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DAD7A24E3C48A001C31AF /* TitleViewController.swift */; };
+		CE8DAD7D24E3C4EF001C31AF /* PablicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DAD7C24E3C4EF001C31AF /* PablicViewController.swift */; };
+		CE8DAD7F24E3C804001C31AF /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DAD7E24E3C804001C31AF /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +46,16 @@
 		CE172F0124D897E100535CEE /* accountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = accountViewController.swift; sourceTree = "<group>"; };
 		CE172F0324D8980C00535CEE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE172F0724D8986900535CEE /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
-		CE39208724DD334800907473 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		CE33EB8E24E44B7C008E9303 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		CE39208B24DD337C00907473 /* MassageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageViewController.swift; sourceTree = "<group>"; };
 		CE39208D24DD3C7E00907473 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CE3BE26024DDBA4400EE4A92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CE8DAD7424E39051001C31AF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		CE8DAD7624E3BE47001C31AF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		CE8DAD7724E3BE47001C31AF /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		CE8DAD7A24E3C48A001C31AF /* TitleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleViewController.swift; sourceTree = "<group>"; };
+		CE8DAD7C24E3C4EF001C31AF /* PablicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PablicViewController.swift; sourceTree = "<group>"; };
+		CE8DAD7E24E3C804001C31AF /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +117,15 @@
 				CE172EF224D88FBB00535CEE /* Assets.xcassets */,
 				CE172F0724D8986900535CEE /* TabBarController.swift */,
 				CE172F0124D897E100535CEE /* accountViewController.swift */,
-				CE39208724DD334800907473 /* CartViewController.swift */,
+				CE8DAD7A24E3C48A001C31AF /* TitleViewController.swift */,
+				CE8DAD7E24E3C804001C31AF /* MainCollectionViewCell.swift */,
 				CE172EED24D88FBA00535CEE /* ViewController.swift */,
+				CE8DAD7C24E3C4EF001C31AF /* PablicViewController.swift */,
 				CE172EFD24D8977A00535CEE /* CollectionViewCell.swift */,
+				CE8DAD7624E3BE47001C31AF /* TableViewCell.swift */,
+				CE33EB8E24E44B7C008E9303 /* Const.swift */,
+				CE8DAD7724E3BE47001C31AF /* TableViewCell.xib */,
+				CE8DAD7424E39051001C31AF /* ImageViewController.swift */,
 				CE39208B24DD337C00907473 /* MassageViewController.swift */,
 				CE172EF424D88FBB00535CEE /* LaunchScreen.storyboard */,
 				CE172EF724D88FBC00535CEE /* Info.plist */,
@@ -177,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE172EF624D88FBB00535CEE /* LaunchScreen.storyboard in Resources */,
+				CE8DAD7924E3BE47001C31AF /* TableViewCell.xib in Resources */,
 				CE3BE26124DDBA4400EE4A92 /* GoogleService-Info.plist in Resources */,
 				CE172EF324D88FBB00535CEE /* Assets.xcassets in Resources */,
 				CE172EF124D88FBA00535CEE /* Main.storyboard in Resources */,
@@ -233,14 +252,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE172F0424D8980C00535CEE /* LoginViewController.swift in Sources */,
+				CE8DAD7524E39051001C31AF /* ImageViewController.swift in Sources */,
 				CE172EEE24D88FBA00535CEE /* ViewController.swift in Sources */,
 				CE172F0824D8986900535CEE /* TabBarController.swift in Sources */,
 				CE172F0224D897E100535CEE /* accountViewController.swift in Sources */,
+				CE8DAD7F24E3C804001C31AF /* MainCollectionViewCell.swift in Sources */,
+				CE8DAD7824E3BE47001C31AF /* TableViewCell.swift in Sources */,
+				CE8DAD7B24E3C48A001C31AF /* TitleViewController.swift in Sources */,
+				CE8DAD7D24E3C4EF001C31AF /* PablicViewController.swift in Sources */,
 				CE39208C24DD337C00907473 /* MassageViewController.swift in Sources */,
-				CE39208824DD334800907473 /* CartViewController.swift in Sources */,
 				CE172EEA24D88FBA00535CEE /* AppDelegate.swift in Sources */,
 				CE172EFE24D8977A00535CEE /* CollectionViewCell.swift in Sources */,
 				CE172EEC24D88FBA00535CEE /* SceneDelegate.swift in Sources */,
+				CE33EB8F24E44B7C008E9303 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -13,4 +13,6 @@ target 'Antique' do
   pod 'Firebase/Storage'
   pod 'FirebaseUI/Storage'
   pod 'SVProgressHUD'
+  pod 'CLImageEditor/AllTools','0.2.4'
+
 end
