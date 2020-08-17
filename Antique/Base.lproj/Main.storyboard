@@ -88,7 +88,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="dvO-cB-2wr" kind="show" id="ihi-D8-jK2"/>
+                                    <segue destination="bfA-Ec-OAd" kind="show" id="8am-hX-L39"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -121,7 +121,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="taN-sF-loJ">
-                                <rect key="frame" x="57" y="439" width="300" height="30"/>
+                                <rect key="frame" x="57" y="395" width="300" height="30"/>
                                 <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="D4z-os-Cap"/>
@@ -134,7 +134,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ggm-Ha-vGS">
-                                <rect key="frame" x="57" y="149" width="300" height="34"/>
+                                <rect key="frame" x="57" y="105" width="300" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="dbO-Ox-HGO"/>
                                 </constraints>
@@ -142,10 +142,10 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="CWH-8f-bUb">
-                                <rect key="frame" x="47" y="203" width="320" height="216"/>
+                                <rect key="frame" x="47" y="159" width="320" height="216"/>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タイトル" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r82-MA-2kX">
-                                <rect key="frame" x="57" y="118" width="300" height="21"/>
+                                <rect key="frame" x="57" y="74" width="300" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="XS8-OR-Fyx"/>
                                 </constraints>
@@ -397,6 +397,9 @@
                         <viewLayoutGuide key="safeArea" id="bCw-pr-k1y"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="みんなの投稿" image="book.fill" catalog="system" id="EPK-7N-9if"/>
+                    <connections>
+                        <outlet property="tableView" destination="sg1-IU-ujQ" id="dVU-2t-rOI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Ua-Tg-aar" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -411,13 +414,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZO5-jY-Y39">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="WVu-Ep-Sdd"/>
                                 </items>
                             </navigationBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="oux-XH-iIv">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5qY-zW-f4X">
                                     <size key="itemSize" width="218" height="221"/>

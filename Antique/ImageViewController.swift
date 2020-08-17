@@ -11,7 +11,13 @@ import CLImageEditor
 import Firebase
 import FirebaseStorage
 import SVProgressHUD
-class ImageViewController:UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CLImageEditorDelegate {
+class ImageViewController:UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout, CLImageEditorDelegate {
+    var localImages: [UIImage] = []
+    override func viewDidLoad() {
+        super.viewDidLoad()
+           self.collectionView.delegate = self
+           self.collectionView.dataSource = self
+       }
     @IBOutlet weak var collectionView: UICollectionView!
     @IBAction func addButton(_ sender: Any) {
         // ライブラリ（カメラロール）を指定してピッカーを開く
@@ -22,17 +28,17 @@ class ImageViewController:UIViewController, UIImagePickerControllerDelegate, UIN
                    self.present(pickerController, animated: true, completion: nil)
                }
     }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+   
      // 写真を撮影/選択したときに呼ばれるメソッド
        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
            if info[.originalImage] != nil {
+            //画像取得
+            let image = info[.originalImage] as! UIImage
+            localImages.append(info[.originalImage] as! UIImage)
+
             // 画像をJPEG形式に変換する
             let imageData = image.jpegData(compressionQuality: 0.75)
-            // 画像と投稿データの保存場所を定義する
+             // 画像と投稿データの保存場所を定義する
             let imageRef = Storage.storage().reference().child(Const.ImagePath).child(".jpg")
             // HUDで投稿処理中の表示を開始
             SVProgressHUD.show()
@@ -64,6 +70,22 @@ class ImageViewController:UIViewController, UIImagePickerControllerDelegate, UIN
  */
            }
        }
+    }
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+                return 13 //追加
+            }
+          func numberOfSections(in collectionView: UICollectionView) -> Int {
+                return 1
+            }
+     
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "Fashion", for: indexPath) as! CollectionViewCell
+            
+        //collectionViewにライブラリで選択した画像を表示させる
+
+        return cell
+
+    }
     // CLImageEditorで加工が終わったときに呼ばれるメソッド
        func imageEditor(_ editor: CLImageEditor!, didFinishEditingWith image: UIImage!) {
         
@@ -74,4 +96,5 @@ class ImageViewController:UIViewController, UIImagePickerControllerDelegate, UIN
           // ImageSelectViewController画面を閉じてタブ画面に戻る
           self.presentingViewController?.dismiss(animated: true, completion: nil)
       }
+   
 }

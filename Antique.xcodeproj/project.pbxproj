@@ -123,9 +123,9 @@
 				CE8DAD7C24E3C4EF001C31AF /* PablicViewController.swift */,
 				CE172EFD24D8977A00535CEE /* CollectionViewCell.swift */,
 				CE8DAD7624E3BE47001C31AF /* TableViewCell.swift */,
-				CE33EB8E24E44B7C008E9303 /* Const.swift */,
 				CE8DAD7724E3BE47001C31AF /* TableViewCell.xib */,
 				CE8DAD7424E39051001C31AF /* ImageViewController.swift */,
+				CE33EB8E24E44B7C008E9303 /* Const.swift */,
 				CE39208B24DD337C00907473 /* MassageViewController.swift */,
 				CE172EF424D88FBB00535CEE /* LaunchScreen.storyboard */,
 				CE172EF724D88FBC00535CEE /* Info.plist */,
@@ -142,10 +142,10 @@
 			buildConfigurationList = CE172EFA24D88FBC00535CEE /* Build configuration list for PBXNativeTarget "Antique" */;
 			buildPhases = (
 				2B3919CC8A325A05B574D690 /* [CP] Check Pods Manifest.lock */,
-				CE172EE224D88FBA00535CEE /* Sources */,
 				CE172EE324D88FBA00535CEE /* Frameworks */,
 				CE172EE424D88FBA00535CEE /* Resources */,
 				215F664106A83DF706611931 /* [CP] Embed Pods Frameworks */,
+				CE172EE224D88FBA00535CEE /* Sources */,
 			);
 			buildRules = (
 			);
