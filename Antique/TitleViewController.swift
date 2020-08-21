@@ -30,6 +30,8 @@ class TitleViewController: UIViewController {
                   postRef.setData(postDic)
                   // HUDで投稿完了を表示する
                   SVProgressHUD.showSuccess(withStatus: "投稿しました")
+        self.dismiss(animated: true, completion: nil)
+
     }
     
     override func viewDidLoad() {

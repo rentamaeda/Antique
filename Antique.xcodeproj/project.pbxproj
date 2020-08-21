@@ -21,6 +21,7 @@
 		CE33EB8F24E44B7C008E9303 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE33EB8E24E44B7C008E9303 /* Const.swift */; };
 		CE39208C24DD337C00907473 /* MassageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE39208B24DD337C00907473 /* MassageViewController.swift */; };
 		CE39208E24DD3C7E00907473 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE39208D24DD3C7E00907473 /* MessageUI.framework */; };
+		CE3B842E24EE2F5A008A574C /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE3B842D24EE2F5A008A574C /* PostData.swift */; };
 		CE3BE26124DDBA4400EE4A92 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE3BE26024DDBA4400EE4A92 /* GoogleService-Info.plist */; };
 		CE8DAD7524E39051001C31AF /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DAD7424E39051001C31AF /* ImageViewController.swift */; };
 		CE8DAD7824E3BE47001C31AF /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8DAD7624E3BE47001C31AF /* TableViewCell.swift */; };
@@ -49,6 +50,7 @@
 		CE33EB8E24E44B7C008E9303 /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		CE39208B24DD337C00907473 /* MassageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageViewController.swift; sourceTree = "<group>"; };
 		CE39208D24DD3C7E00907473 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		CE3B842D24EE2F5A008A574C /* PostData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		CE3BE26024DDBA4400EE4A92 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CE8DAD7424E39051001C31AF /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		CE8DAD7624E3BE47001C31AF /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				CE8DAD7C24E3C4EF001C31AF /* PablicViewController.swift */,
 				CE172EFD24D8977A00535CEE /* CollectionViewCell.swift */,
 				CE8DAD7624E3BE47001C31AF /* TableViewCell.swift */,
+				CE3B842D24EE2F5A008A574C /* PostData.swift */,
 				CE8DAD7724E3BE47001C31AF /* TableViewCell.xib */,
 				CE8DAD7424E39051001C31AF /* ImageViewController.swift */,
 				CE33EB8E24E44B7C008E9303 /* Const.swift */,
@@ -261,6 +264,7 @@
 				CE8DAD7B24E3C48A001C31AF /* TitleViewController.swift in Sources */,
 				CE8DAD7D24E3C4EF001C31AF /* PablicViewController.swift in Sources */,
 				CE39208C24DD337C00907473 /* MassageViewController.swift in Sources */,
+				CE3B842E24EE2F5A008A574C /* PostData.swift in Sources */,
 				CE172EEA24D88FBA00535CEE /* AppDelegate.swift in Sources */,
 				CE172EFE24D8977A00535CEE /* CollectionViewCell.swift in Sources */,
 				CE172EEC24D88FBA00535CEE /* SceneDelegate.swift in Sources */,

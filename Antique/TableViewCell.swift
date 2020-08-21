@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import FirebaseUI
 class TableViewCell: UITableViewCell {
     @IBOutlet weak var iconImageView: UIImageView!
     
@@ -26,5 +26,18 @@ class TableViewCell: UITableViewCell {
            // Configure the view for the selected state
        }
 
-      
+      // PostDataの内容をセルに表示
+      func setPostData(_ postData: PostData) {
+          // 画像の表示
+          ImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
+          let imageRef = Storage.storage().reference().child(Const.ImagePath).child(postData.id + ".jpg")
+          ImageView.sd_setImage(with: imageRef)
+
+          // キャプションの表示
+        self.commentLabel.text = "\(postData.name!) : \(postData.caption!)"
+
+          // 日時の表示
+        self.dateLabel.text = "\(postData.name!) : \(postData.caption!)"
+    }
+
 }

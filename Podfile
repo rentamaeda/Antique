@@ -6,7 +6,8 @@ target 'Antique' do
   use_frameworks!
 
   # Pods for Antique
- pod 'Firebase'
+ pod 'Firebase','6.11.0'
+
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'

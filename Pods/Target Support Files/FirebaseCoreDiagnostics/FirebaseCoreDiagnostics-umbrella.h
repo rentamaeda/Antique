@@ -11,15 +11,6 @@
 #endif
 
 #import "firebasecore.nanopb.h"
-#import "GoogleDataTransportInternal.h"
-#import "GULAppEnvironmentUtil.h"
-#import "GULHeartbeatDateStorage.h"
-#import "GULKeychainStorage.h"
-#import "GULKeychainUtils.h"
-#import "GULSecureCoding.h"
-#import "GULLogger.h"
-#import "FIRCoreDiagnosticsData.h"
-#import "FIRCoreDiagnosticsInterop.h"
 
 FOUNDATION_EXPORT double FirebaseCoreDiagnosticsVersionNumber;
 FOUNDATION_EXPORT const unsigned char FirebaseCoreDiagnosticsVersionString[];
