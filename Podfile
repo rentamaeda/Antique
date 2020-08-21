@@ -7,7 +7,6 @@ target 'Antique' do
 
   # Pods for Antique
  pod 'Firebase','6.11.0'
-
   pod 'Firebase/Analytics'
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
