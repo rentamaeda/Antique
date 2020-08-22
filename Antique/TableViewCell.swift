@@ -37,7 +37,7 @@ class TableViewCell: UITableViewCell {
         self.commentLabel.text = "\(postData.name!) : \(postData.caption!)"
 
           // 日時の表示
-        self.dateLabel.text = "\(postData.name!) : \(postData.caption!)"
+        self.dateLabel.text = "\(postData.date!)"
     }
 
 }

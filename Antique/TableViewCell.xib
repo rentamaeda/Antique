@@ -73,6 +73,7 @@
                     <constraint firstItem="BVd-He-vDW" firstAttribute="top" secondItem="XkB-Fq-kah" secondAttribute="bottom" constant="26" id="XNQ-2L-z5H"/>
                     <constraint firstItem="rtp-LO-vui" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="Z5E-Al-9xn"/>
                     <constraint firstItem="XkB-Fq-kah" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cea-ke-sPa"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="BVd-He-vDW" secondAttribute="bottom" constant="7" id="emC-sH-max"/>
                     <constraint firstItem="jHV-uV-ngm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="iTA-dD-qXz"/>
                     <constraint firstItem="cdo-Jm-wTa" firstAttribute="leading" secondItem="rtp-LO-vui" secondAttribute="trailing" constant="30" id="m7S-4A-B14"/>
                     <constraint firstItem="cdo-Jm-wTa" firstAttribute="centerY" secondItem="rtp-LO-vui" secondAttribute="centerY" id="pIT-gd-qj2"/>
@@ -88,7 +89,7 @@
                 <outlet property="iconImageView" destination="rtp-LO-vui" id="NEV-kv-Gex"/>
                 <outlet property="nameLable" destination="cdo-Jm-wTa" id="DcQ-2Y-lXD"/>
             </connections>
-            <point key="canvasLocation" x="172" y="165"/>
+            <point key="canvasLocation" x="20" y="-23"/>
         </tableViewCell>
     </objects>
 </document>
