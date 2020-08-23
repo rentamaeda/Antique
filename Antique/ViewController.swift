@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource{
-  var postArray: [PostData] = []
+    var postArray: [PostData] = []
 
     var listener: ListenerRegistration!
 
@@ -22,8 +22,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     @IBAction func addActionButton(_ sender: Any) {
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-                 return 1 //追加
-             }
+            postArray.count
+        
+    }
    func numberOfSections(in collectionView: UICollectionView) -> Int {
          return 1
      }
@@ -78,8 +79,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
          let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Fashion", for: indexPath) as! CollectionViewCell
-               cell.setPostData(postArray[indexPath.row])
-
+        cell.setPostData(postArray[indexPath.row])
+        cell.ImageWidth.constant = UIScreen.main.bounds.width/3-30
+                     cell.ImageHeight.constant = 150
+                    
                return cell
           
      }
@@ -88,7 +91,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
       // let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: "Fashion", for: indexPath) as! CollectionViewCell
        //    cell.setPostData(postArray[indexPath.row])
                            // SubViewController へ遷移するために Segue を呼び出す
-                           performSegue(withIdentifier: "Image",sender: nil)
+                           performSegue(withIdentifier: "Model",sender: nil)
                        
            //collectionViewにライブラリで選択した画像を表示させる
 

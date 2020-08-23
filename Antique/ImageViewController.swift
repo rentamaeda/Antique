@@ -86,12 +86,20 @@ CLImageEditorDelegate {
        }
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-                return 13 //追加
+                postArray.count
             }
           func numberOfSections(in collectionView: UICollectionView) -> Int {
                 return 1
             }
-     
+     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+           let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Fashion", for: indexPath) as! MainCollectionViewCell
+          cell.setPostData(postArray[indexPath.row])
+//          cell.ImageWidth.constant = UIScreen.main.bounds.width/3-30
+ //                      cell.ImageHeight.constant = 150
+                      
+                 return cell
+            
+       }
  
     // CLImageEditorで加工が終わったときに呼ばれるメソッド
        func imageEditor(_ editor: CLImageEditor!, didFinishEditingWith image: UIImage!) {

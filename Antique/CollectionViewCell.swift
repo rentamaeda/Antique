@@ -25,10 +25,10 @@ class CollectionViewCell: UICollectionViewCell {
            let imageRef = Storage.storage().reference().child(Const.ImagePath).child(postData.id + ".jpg")
            imageView.sd_setImage(with: imageRef)
 
-           // キャプションの表示
-         self.priceLabel.text = "\(postData.name!) : \(postData.caption!)"
+        // キャプションの表示
+            self.priceLabel.text = "\(postData.caption!)"
 
-           // 日時の表示
-         self.brandLabel.text = "\(postData.date!)"
+              // 日時の表示
+            self.brandLabel.text = "\(postData.date!)"
      }
 }

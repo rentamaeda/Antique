@@ -28,13 +28,17 @@ class TableViewCell: UITableViewCell {
 
       // PostDataの内容をセルに表示
       func setPostData(_ postData: PostData) {
+        
+          //名前の表示
+        self.nameLable.text = "\(postData.name!) "
+
           // 画像の表示
           ImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
           let imageRef = Storage.storage().reference().child(Const.ImagePath).child(postData.id + ".jpg")
           ImageView.sd_setImage(with: imageRef)
 
           // キャプションの表示
-        self.commentLabel.text = "\(postData.name!) : \(postData.caption!)"
+        self.commentLabel.text = " \(postData.caption!)"
 
           // 日時の表示
         self.dateLabel.text = "\(postData.date!)"
